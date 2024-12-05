@@ -1,0 +1,76 @@
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: ; */
+
+}
+
+body {
+    background: url('https://png.pngtree.com/background/20230614/original/pngtree-space-background-wallpapers-picture-image_3486756.jpg') center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    row-gap: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+
+#date{
+font-size: 3rem;
+color: #C14BB4;
+}
+
+.relogio {
+    background-color: rgba(240, 248, 255, 0.129);
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+    box-shadow: 3px 8px 18px;
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    align-items: center;
+
+}
+
+.relogio div {
+    background-color: #364dd13e;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+    box-shadow: 5px 5px 8px;
+    backdrop-filter: blur(8px);
+    margin: 0 1rem;
+    width: 70%;
+
+}
+
+.relogio div span {
+    font-size: 6rem;
+
+}
+
+.relogio div span.tempo {
+    font-size: 1.5rem;
+    color: red;
+}
+
+@media (max-width: 769px) {
+    .relogio {
+        flex-direction: column;
+        width: 60%;
+        height: 80vh;
+    }
+    
+}
